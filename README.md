@@ -31,6 +31,9 @@ echo "blacklist rtl8xxxu" >> /etc/modprobe.d/rtl8xxxu.conf
 ```
 
 ```
+git clone https://github.com/johnsmith80/REALTEK-RTL8192EU.git
+cd REALTEK-RTL8192EU
+unzip REALTEK-RTL8192EU.zip
 sudo cp -ar . /usr/src/rtl8192eu-1.0
 sudo dkms add -m rtl8192eu -v 1.0
 sudo dkms install -m rtl8192eu -v 1.0
@@ -39,6 +42,9 @@ sudo dkms install -m rtl8192eu -v 1.0
 ## USE MAKE
 
 ```
+git clone https://github.com/johnsmith80/REALTEK-RTL8192EU.git
+cd REALTEK-RTL8192EU
+unzip REALTEK-RTL8192EU.zip
 sudo make clean
 sudo make
 sudo make install
